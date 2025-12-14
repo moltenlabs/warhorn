@@ -1,0 +1,20 @@
+[package]
+name = "warhorn"
+description = "Protocol types for agent communication - signals between goblins"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+keywords = ["agent", "protocol", "ai", "llm", "communication"]
+categories = ["development-tools", "asynchronous"]
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+uuid = { version = "1", features = ["v4", "serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+
+[dev-dependencies]
+pretty_assertions = "1"
